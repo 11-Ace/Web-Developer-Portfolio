@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Web Developer Portfolio</title>
+  </head>
+  <body class="bg-mainBg">
+    <!-- Navbar -->
+    <nav
+      class="relative container mx-auto p-6 px-24 font-inter text-headingText md:px-10"
+    >
+      <div class="flex items-center justify-between">
+        <div class="flex item-center">
+          <h1
+            class="font-bold text-2xl font-prata hover:text-primaryText md:font-thin md:text-xl"
+          >
+            <a href="#">Jonathan Spencer</a>
+          </h1>
+        </div>
+        <ul class="flex items-center space-x-6 md:hidden">
+          <li><a href="#" class="hover:text-primaryText">Articles</a></li>
+          <li><a href="#" class="hover:text-primaryText">Chat</a></li>
+          <li><a href="#" class="hover:text-primaryText">Awards</a></li>
+          <li><a href="#" class="hover:text-primaryText">About</a></li>
+        </ul>
+        <button
+          class="py-4 px-6 font-prata bg-contactLink text-black hover:underline md:hidden"
+        >
+          Get in touch
+        </button>
+
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="hidden hamburger focus:outline-none md:block"
+        >
+          <img src="Assets/Hamburger Menu.svg" alt="" />
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="hidden md:block">
+        <ul
+          id="menu"
+          class="hidden absolute flex-col items-center text-center self-end py-8 mt-10 space-y-6 left-6 right-6 w-auto font-bold bg-grayBg transition-opacity ease-in-out duration-500"
+        >
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Chat</a></li>
+          <li><a href="#">Awards</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Experience -->
+    <section
+      class="flex flex-col container my-6 px-24 text-white space-y-16 md:px-10"
+    >
+      <!-- Brief -->
+      <div class="w-2/4 md:w-full">
+        <h1 class="font-semibold text-h1 font-prata md:font-medium">
+          Helping companies build better, scalable software.
+        </h1>
+        <p class="font-inter text-sm text-primaryText pr-14 md:pr-0 md:text-lg">
+          Award-winning web developer and author, with over 15+ years of working
+          experience with Fortune 500 companies like Apple, Google, Facebook,
+          and more.
+        </p>
+      </div>
+      <!-- Partners -->
+      <div
+        class="flex items-center justify-between md:grid md:grid-cols-3 md:gap-x-4 md:gap-y-8 md:place-items-center sm:grid-cols-2"
+      >
+        <div>
+          <img src="Assets/Logos/Walmart.svg" alt="Walmart Logo" />
+        </div>
+        <div>
+          <img src="Assets/Logos/JP Morgan.svg" alt="JP Morgan Logo" />
+        </div>
+        <div>
+          <img src="Assets/Logos/Visa.svg" alt="Visa Logo" />
+        </div>
+        <div>
+          <img src="Assets/Logos/Tinder.svg" alt="Tinder Logo" />
+        </div>
+        <div>
+          <img src="Assets/Logos/Samsung.svg" alt="Samsung Logo" />
+        </div>
+        <div>
+          <img src="Assets/Logos/Verizon.svg" alt="Verizon Logo" />
+        </div>
+      </div>
+      <div
+        class="flex flex-row items-center space-x-28 mx-auto text-left md:flex-col md:space-x-0 md:space-y-16"
+      >
+        <!-- Site 1 -->
+        <div class="w-1/2 md:w-full">
+          <div class="w-auto">
+            <img src="Assets/Spense.png" alt="" class="w-full" />
+          </div>
+          <h2 class="font-prata text-h2 my-5 md:my-3">Spencer.com</h2>
+          <p class="font-inter text-primaryText pr-8">
+            Rethinking the way writers get paid, an open-source platform
+            designed to help writers focus more on writing, and less on when and
+            how they'll get paid. Project in collaboration with Codewell.cc
+          </p>
+        </div>
+        <!-- Site 2 -->
+        <div class="w-1/2 md:w-full">
+          <div class="w-auto">
+            <img src="Assets/YelpCamp.png" alt="" class="w-full block" />
+          </div>
+          <h2 class="font-prata text-h2 my-5 md:my-3">YelpCamp.com</h2>
+          <p class="font-inter text-primaryText pr-8">
+            Allowing backpack travelers toperfectly plan their trip through an
+            open-source platform similar totripAdvisor. With over 1m MAU,
+            YelpCamp has been the crowd's favourite in 2021
+          </p>
+        </div>
+      </div>
+      <div></div>
+    </section>
+    <!-- About -->
+    <section
+      class="flex container justify-between space-x-28 py-16 px-24 my-10 text-white bg-grayBg md:px-10 md:flex-col md:space-x-0"
+    >
+      <!-- left -->
+      <div class="w-1/2 md:w-full">
+        <h2 class="font-prata text-h2">
+          A co-founder at one of the world's largest communties
+        </h2>
+        <p class="font-inter text-primaryText my-6">
+          The combined experience I have working at the top Fortune 500
+          companies has allowed me a developer a skillset that helps me in not
+          just development, but in every aspect of any busines
+        </p>
+        <p class="font-inter text-primaryText">
+          I'm proud to announce that I am now at one of the world's largest
+          communities teaching young minds about how to sell yourself as a
+          developer and open them to a whole new world of opportunities
+        </p>
+      </div>
+      <!-- right -->
+      <div class="w-1/2 md:w-full md:mt-16">
+        <p class="font-inter text-primaryText">
+          As a developr, you have everything available toyou and all that's
+          holding you back is yourself.
+        </p>
+        <p class="font-inter text-primaryText my-8">
+          A quote I live by perfectly illustrate what I mean.
+        </p>
+        <p class="text-primaryText mb-8">
+          "How big would you dream, if you <strong>knew</strong> you wouldn't
+          fail?" You've already gone through the hardest parts being a
+          developer, it's time to elevate your skills and become a leader in
+          something you're <em>passionate</em> about.
+        </p>
+        <p class="font-inter text-primaryText">
+          I'm happy to chat over coffe some time about how I can help your
+          company.
+        </p>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section
+      class="py-8 px-24 my-8 text-white w-1/2 md:px-10 md:w-10/12 sm:w-full"
+    >
+      <div class="flex flex-col items-start">
+        <h2 class="text-h2 font-prata">Interested in working with me?</h2>
+        <p class="font-inter text-primaryText mt-6">
+          I'm active on all social media platforms below, but you can also send
+          me an email and I will get back to you within 24-48 hours
+        </p>
+        <a
+          href="#"
+          class="font-prata p-4 px-6 mt-8 bg-contactLink text-black hover:underline"
+        >
+          Get in touch
+        </a>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="flex items-center justify-between container p-6 px-24 text-white bg-grayBg md:px-10"
+    >
+      <p class="font-prata text-lg">Jonathan Spencer</p>
+      <div class="flex space-x-6">
+        <a href="#"><img src="Assets/Social Icons/LinkedIn.svg" alt="" /></a>
+        <a href="#"><img src="Assets/Social Icons/Github.svg" alt="" /></a>
+        <a href="#"><img src="Assets/Social Icons/Twitter.svg" alt="" /></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
